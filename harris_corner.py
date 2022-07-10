@@ -5,7 +5,7 @@ import cv2
 def harris_corner(input_image, alpha, window_size, threshold):
     corner_list = []
     output_image = cv2.cvtColor(input_image.copy(), cv2.COLOR_GRAY2RGB)
-    offset = window_size//2
+    offset = window_size // 2
     y_range = input_image.shape[0] - offset
     x_range = input_image.shape[1] - offset
 
